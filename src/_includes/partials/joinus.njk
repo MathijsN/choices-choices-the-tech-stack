@@ -1,0 +1,19 @@
+<section id="doe-mee" class="joinus">
+    <div>
+        <hgroup>
+            <span>{{ joinUs.subtitle }}</span>
+            <h2>{{ joinUs.heading }}</h2>
+        </hgroup>
+        <ol>
+            {% for card in joinUs.cards %}
+                <li>
+                    <article>
+                        <p class="number">{{ card.number }}</p>
+                        <h3>{{ card.title }}</h3>
+                        <p class="description">{{ card.description }}</p>
+                    </article>
+                </li>
+            {% endfor %}
+        </ol>
+    </div>
+</section>

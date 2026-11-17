@@ -1,0 +1,20 @@
+<section class="hero">
+    <div class="hero-wrapper">
+        <div class="hero-info-wrapper">
+            <h1>{{ hero.heading }}</h1>
+            <div>
+                <p>
+                    {{ hero.description }}
+                </p>
+                <div class="button-wrapper">
+                    {% include "partials/button.njk" %}
+                </div>
+            </div>
+        </div>
+        <picture>
+            <source srcset="{{ hero.imageAvif }}" type="image/avif" sizes="(max-width: 600px) 400px, 700px"/>
+            <source srcset="{{ hero.imageWebp }}" type="image/webp" sizes="(max-width: 600px) 400px, 700px"/>
+            <img src="{{ hero.imageWebp }}" alt="person logging using prologg webapp"/>
+        </picture>
+    </div>
+</section>
