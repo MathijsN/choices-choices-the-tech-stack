@@ -504,3 +504,104 @@ a {
         padding-bottom: var(--space-sm);
     }
 }
+
+.hoe-het-werkt {
+    section {
+        background-color: var(--background-color-secondary);
+        display: grid;
+    }
+
+    div {
+        @media (width > 890px) {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            justify-self: center;
+            max-width: var(--max-width);
+        }
+    }
+}
+
+.preview-banner {
+    section {
+        font-family: var(--font-heading);
+        grid-column: span 2;
+        max-width: max-content;
+        place-self: center;
+
+        margin: 0.5rem;
+        padding: 1rem;
+        border-radius: 16px;
+        background-color: var(--background-color-primary);
+
+        @media (width > 486px) {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .svg-wrapper {
+            height: 2.5rem;
+            width: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            background-color: var(--background-color-secondary);
+
+            svg {
+                path {
+                    @media (prefers-color-scheme: dark) {
+                        fill: var(--alert-color);
+                    }
+                }
+            }
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-block: 0.5rem;
+            color: var(--alert-color);
+
+            .deco-dot {
+                width: 3px;
+                height: 3px;
+                border-radius: 50%;
+                background-color: var(--alert-color);
+            }
+
+            .sub-title {
+                font-family: var(--font-heading);
+            }
+        }
+
+        p {
+            font-family: "Inter", Arial, Helvetica, sans-serif;
+            max-width: 50rem;
+
+            span {
+                font-family: var(--font-heading);
+                font-weight: bold;
+            }
+        }
+    }
+
+    section {
+        display: grid;
+    }
+
+    img {
+        max-width: 20rem;
+        padding: 0.5rem;
+        filter: var(--filter-shadow-card);
+        display: flex;
+        justify-self: center;
+
+        @media (width > 890px) {
+            margin-inline: 3rem;
+            place-self: center;
+        }
+    }
+}
