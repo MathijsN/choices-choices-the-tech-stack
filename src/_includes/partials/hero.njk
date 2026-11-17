@@ -7,7 +7,9 @@
                     {{ hero.description }}
                 </p>
                 <div class="button-wrapper">
-                    {% include "partials/button.njk" %}
+                    {% for button in hero.buttons %}
+                        {% include "partials/button.njk" %}
+                    {% endfor %}
                 </div>
             </div>
         </div>

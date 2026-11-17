@@ -1,18 +1,10 @@
 <section id="doe-mee" class="joinus">
     <div>
-        <hgroup>
-            <span>{{ joinUs.subtitle }}</span>
-            <h2>{{ joinUs.heading }}</h2>
-        </hgroup>
+        {% from "macros/Sectiontitle.njk" import titleSet %}
+        {{ titleSet(title=joinUs.heading, subtitle=joinUs.subtitle) }}
         <ol>
             {% for card in joinUs.cards %}
-                <li>
-                    <article>
-                        <p class="number">{{ card.number }}</p>
-                        <h3>{{ card.title }}</h3>
-                        <p class="description">{{ card.description }}</p>
-                    </article>
-                </li>
+                {% include "partials/cards.njk" %}
             {% endfor %}
         </ol>
     </div>
