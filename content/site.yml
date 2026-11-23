@@ -1,0 +1,42 @@
+---
+hero:
+  title: "Bewijs van uitbuiting, vastgelegd door wie het meemaakt."
+  description: "Veilig en anoniem bewijs verzamelen met een telefoon. Voor advocaten in zaken rond arbeidsuitbuiting."
+  imageWebpFallback: "/images/hero-img.webp"
+  imageWebp: "/images/hero-img-05x.webp 355w, /images/hero-img.webp 710w"
+  imageAvif: "/images/hero-img-05x.avif 355w, /images/hero-img.avif 710w"
+  buttons:
+    - content: "Vraag kantoordemo aan"
+      href: "mailto:frank.kloos@fonetic.studio"
+      variant: "hero-primary"
+    - content: "Bekijk de casus"
+      href: "#hoe-het-werkt"
+      variant: "hero-secondary"
+
+why:
+  subtitle: "Waarom"
+  title: "Arbeidsuitbuiting is moeilijk te bewijzen."
+  reasons:
+    - title: "Geen papieren"
+      description: "Soms is er geen contract en wordt het loon contant betaald."
+    - title: "Volledige afhankelijkheid"
+      description: "De werkgever is ook de huisbaas en regelt het vervoer."
+    - title: "Bewijs verdwijnt"
+      description: "Losse foto's en appjes zonder aantoonbare herkomst zijn makkelijk te betwisten."
+
+getInvolved:
+  title: "Twee manieren om Prologg verder te brengen."
+  subtitle: "Doe mee"
+  cards:
+    - number: "1"
+      title: "Steun de doorontwikkeling"
+      description: "Doe mee aan de crowdfunding. Met uw bijdrage bouwen we de beveiligde back-end, laten we de app onafhankelijk doorlichten en testen we de vertalingen met de doelgroep zelf."
+      button:
+        content: "Naar crowdfunding"
+        href: "#"
+    - number: "2"
+      title: "Word klant van Prologg voor advocaten"
+      description: "Ontvang dossiers van cliënten in een beveiligde omgeving voor uw kantoor."
+      button:
+        content: "Contactformulier"
+        href: "mailto:frank.kloos@fonetic.studio"
