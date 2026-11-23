@@ -1,37 +1,56 @@
-# Choices, Choices - The Tech-stack
+# sv
 
-Onderzoek een andere tech-stack voor het ontwerpen en bouwen van een website voor een opdrachtgever.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-De instructie vind je in de [Wiki]([https://github.com/fdnd-task/choices-choices-the-tech-stack/blob/main/docs/INSTRUCTIONS.md](https://github.com/fdnd-task/choices-choices-the-tech-stack/wiki))
+## Creating a project
 
+If you're seeing this, you've probably already done this step. Congrats!
 
+```sh
+# create a new project
+npx sv create my-app
+```
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+To recreate this project with the same configuration:
 
-## Inhoudsopgave
+```sh
+# recreate this project
+npx sv@1.7.0 create --template minimal --no-types --install npm .
+```
 
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+## Adding features
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Add features to your project with `sv add`:
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+```sh
+npx sv add
+```
 
-## Installatie
+For example, to add Tailwind CSS:
 
-## Gebruik
+```sh
+npx sv add tailwindcss
+```
 
-## Bronnen
+## Developing
 
-## Licentie
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-This project is licensed under the terms of the [MIT license](./LICENSE).
+```sh
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```sh
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
