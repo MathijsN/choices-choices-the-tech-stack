@@ -10,7 +10,7 @@ hero:
       href: "mailto:frank.kloos@fonetic.studio"
       variant: "hero-primary"
     - content: "Bekijk de casus"
-      href: "#hoe-het-werkt"
+      href: "#"
       variant: "hero-secondary"
 
 why:
