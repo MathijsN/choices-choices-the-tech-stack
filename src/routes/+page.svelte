@@ -1,7 +1,7 @@
 <script>
     import Hero from "$lib/organisms/Hero.svelte";
-    import WhyPrologg from "$lib/organisms/WhyPrologg.svelte";
-    import GetInvolved from "$lib/organisms/GetInvolved.svelte";
+    import WhyPrologg from "$lib/organisms/Whyprologg.svelte";
+    import GetInvolved from "$lib/organisms/Getinvolved.svelte";
 
     import { lang } from "$lib/lang.svelte.js";
     import { content } from "$lib/content.js";
